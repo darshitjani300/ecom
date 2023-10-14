@@ -1,0 +1,42 @@
+.mainItemBox {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.itemInfo {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 10px 0px;
+}
+
+.titleGreen:hover {
+  color: green;
+  cursor: pointer;
+}
+
+#onHover {
+  height: 290px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.imageCart {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+#onHover:hover .imageCart{
+ bottom: 20px;
+ transition: 0.4s;
+}

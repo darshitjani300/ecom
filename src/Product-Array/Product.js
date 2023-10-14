@@ -1,0 +1,58 @@
+let product = [
+  {
+    id: crypto.randomUUID(),
+    img: "https://mooncart.dexignzone.com/xhtml/images/shop/product/12.png",
+    title: "Protien Supplements",
+    price: 40,
+    featured: "FEATURED",
+    sale: "SALE",
+    quantity: 1,
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "https://mooncart.dexignzone.com/xhtml/images/shop/product/13.png",
+    title: "Home Fitness Equipment",
+    price: 35,
+    featured: "FEATURED",
+    sale: "SALE",
+    quantity: 1,
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "https://mooncart.dexignzone.com/xhtml/images/shop/product/14.png",
+    title: "Yoga Mats and Accessories",
+    price: 20,
+    sale: "-10%",
+    featured: "",
+    quantity: 1,
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "https://mooncart.dexignzone.com/xhtml/images/shop/product/15.png",
+    title: "Bamboo Toothbrushes",
+    price: 30,
+    sale: "-50%",
+    featured: "",
+    quantity: 1,
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "https://mooncart.dexignzone.com/xhtml/images/shop/product/7.png",
+    title: "Wooden Water Bottles",
+    price: 45,
+    featured: "FEATURED",
+    sale: "-20%",
+    quantity: 1,
+  },
+  {
+    id: crypto.randomUUID(),
+    img: "https://mooncart.dexignzone.com/xhtml/images/shop/product/16.png",
+    title: "Fitness Trackers",
+    price: 50,
+    sale: "SALE",
+    featured: "",
+    quantity: 1,
+  },
+];
+
+export default product;
