@@ -6,7 +6,7 @@ const Navigation = () => {
       <nav className="bg-[#24262B] flex items-center justify-between text-white p-container py-3">
         <div className="flex items-center gap-2 ml-2">
           <i className="fa-solid fa-bars xl:text-[1.5rem]"></i>
-          <h3 className="tracking-[1px] text-[12px] xl:text-[1.5rem]">BROWSE CATEGORIES</h3>
+          <h3 className="tracking-[1px] text-[12px] xl:text-[1.3rem]">BROWSE CATEGORIES</h3>
           <i className="fa-solid fa-chevron-down pl-1 text-[10px]"></i>
         </div>
         <div className="flex items-center w-[50%]">
