@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import AddToCartBtn, { AddtoFavBtn } from "../../ui/AddToCartBtn";
 import { myContext } from "../../../App";
-import Sale from "../../ui/sale";
 
 const QuickView = () => {
   let { setShowModel } = useContext(myContext);
