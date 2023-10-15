@@ -52,7 +52,7 @@ const Categories = () => {
       </h1>
       <div className="flex justify-between lg:text-[14px] 2xl:text-[1.3rem] text-gray-500">
         <h3>Discover the most trending products in Mooncart.</h3>
-        <a href="#" className="hidden lg:block text-[12px] 2xl:text-[13rem]">
+        <a href="#" className="hidden lg:block text-[12px] 2xl:text-[1.3rem]">
           See All Products
           <i className="fa-solid fa-greater-than text-[10px] 2xl:text-[1.2rem] pl-2"></i>
         </a>
