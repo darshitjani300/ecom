@@ -22,10 +22,10 @@ const FirstBanner = () => {
           </a>
         </div>
         <div className="lg:w-[40%] flex flex-col justify-center lg:items-start 2xl:gap-5 items-center text-center px-5 py-3 lg:px-0 lg:text-left ">
-          <h1 className="text-[1.8rem] xl:text-[2.3rem] 2xl:text-[2.6rem] tracking-wide leading-10 xl:leading-[3rem] font-semibold mb-3">
+          <h1 className="text-[1.8rem] xl:text-[2rem] tracking-wide leading-10 xl:leading-[35px] font-semibold mb-3 2xl:mb-0">
             Enjoy the best quality and features made by MoonCart.
           </h1>
-          <p className="text-[13px] 2xl:text-[1.7rem] xl:text-[1.1rem] md:leading-[22px] xl:leading-[25px] mb-5">
+          <p className="text-[13px] 2xl:text-[1.2rem] xl:text-[1.1rem] md:leading-[22px] xl:leading-[27px] mb-3 2xl:mb-0">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using.
