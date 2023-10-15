@@ -24,8 +24,15 @@ function App() {
     products,
     cart,
     showModal,
+    qView,
     setShowModel,
-    { AddToCart, RemoveFromCart, IncrementQuantity, DecrementQuantity },
+    {
+      AddToCart,
+      RemoveFromCart,
+      IncrementQuantity,
+      DecrementQuantity,
+      AddToView,
+    },
   ] = UseArrayState();
 
   return (
@@ -36,9 +43,11 @@ function App() {
         cart,
         showModal,
         setShowModel,
+        qView,
         RemoveFromCart,
         IncrementQuantity,
         DecrementQuantity,
+        AddToView,
       }}
     >
       {path == "/" && <Header />}

@@ -4,9 +4,9 @@ import styles from "./FirstBanner.module.css";
 const FirstBanner = () => {
   return (
     <section className={styles.background}>
-      <div className="gap-10 lg:flex md:py-0 md:px-[100px] lg:py-0 lg:px-[100px justify-center items-center text-white">
+      <div className="gap-10 lg:flex md:py-0 md:px-[100px] lg:py-0 lg:px-[100px] justify-center items-center text-white">
         <div className="relative lg:w-[50%] py-2">
-          <div className="px-4 md:px-12 lg:px-2 xl:px-30 2xl:px-28 xl:py-10">
+          <div className="px-4 md:px-12 lg:px-2 2xl:px-28 ">
             <img
               src="https://mooncart.dexignzone.com/xhtml/images/video-img.png"
               alt=""
@@ -22,19 +22,19 @@ const FirstBanner = () => {
           </a>
         </div>
         <div className="lg:w-[40%] flex flex-col justify-center lg:items-start 2xl:gap-5 items-center text-center px-5 py-3 lg:px-0 lg:text-left ">
-          <h1 className="text-[1.8rem] xl:text-[3rem] 2xl:text-[3.3rem] tracking-wide leading-10 xl:leading-[4rem] font-semibold mb-3">
+          <h1 className="text-[1.8rem] xl:text-[2.3rem] 2xl:text-[2.6rem] tracking-wide leading-10 xl:leading-[3rem] font-semibold mb-3">
             Enjoy the best quality and features made by MoonCart.
           </h1>
-          <p className="text-[13px] 2xl:text-[1.7rem] xl:text-[1.4rem] md:leading-[22px] xl:leading-[35px] mb-5">
+          <p className="text-[13px] 2xl:text-[1.7rem] xl:text-[1.1rem] md:leading-[22px] xl:leading-[25px] mb-5">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using.
           </p>
           <div className="flex justify-center items-center">
-            <button className="border-white text-[14px] xl:text-[1.5rem] border-[1px] px-[17px] py-[7px] mr-4">
+            <button className="border-white text-[14px] xl:text-[1rem] border-[1px] px-[17px] py-[7px] mr-4">
               SHOP NOW
             </button>
-            <button className="border-white text-[14px] xl:text-[1.5rem] border-[1px] px-[17px] py-[7px]">
+            <button className="border-white text-[14px] xl:text-[1rem] border-[1px] px-[17px] py-[7px]">
               VIEW DETAILS
             </button>
           </div>

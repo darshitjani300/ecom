@@ -1,6 +1,6 @@
 const AddToCartBtn = () => {
   return (
-    <button className="border-[1px] border-[#222328] bg-[#222328] text-white p-2 tracking-[1px] text-[12px] xl:text-[1.5rem]">
+    <button className="border-[1px] border-[#222328] bg-[#222328] text-white p-2 tracking-[1px] text-[12px] xl:text-[1rem]">
       Add to Cart
     </button>
   );

@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { react, useContext } from "react";
 import AddToCartBtn, { AddtoFavBtn } from "../../ui/AddToCartBtn";
 import { myContext } from "../../../App";
+import Sale from "../../ui/Sale";
 
 const QuickView = () => {
-  let { setShowModel } = useContext(myContext);
+  let { setShowModel, qView } = useContext(myContext);
   const closeModel = () => setShowModel(false);
   return (
     <>
@@ -24,7 +25,7 @@ const QuickView = () => {
                 />
               </div>
             </div>
-            <div className=" justify-self-start">
+            <div className=" jPustify-self-start">
               <div>
                 <Sale />
                 <h1 className="my-2 font-semibold text-[1.2rem]">

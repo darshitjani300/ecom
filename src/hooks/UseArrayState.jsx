@@ -5,6 +5,7 @@ const UseArrayState = () => {
   let [products] = useState(product);
   let [cart, setCart] = useState([]);
   const [showModal, setShowModel] = useState(false);
+  const [qView, setQView] = useState(null);
 
   const AddToCart = (id) => {
     let obj = products.find((x) => x.id == id);
@@ -14,6 +15,13 @@ const UseArrayState = () => {
     } else {
       setCart([...cart, obj]);
     }
+  };
+
+  const AddToView = (id) => {
+    let obj = product.find((x) => x.id == id);
+    setShowModel(true);
+    console.log(obj);
+    setQView(obj);
   };
 
   const RemoveFromCart = (id) => {
@@ -36,8 +44,16 @@ const UseArrayState = () => {
     products,
     cart,
     showModal,
+    qView,
     setShowModel,
-    { AddToCart, RemoveFromCart, IncrementQuantity, DecrementQuantity },
+
+    {
+      AddToCart,
+      RemoveFromCart,
+      IncrementQuantity,
+      DecrementQuantity,
+      AddToView,
+    },
   ];
 };
 
