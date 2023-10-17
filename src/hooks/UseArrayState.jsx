@@ -5,7 +5,8 @@ const UseArrayState = () => {
   let [products] = useState(product);
   let [cart, setCart] = useState([]);
   const [showModal, setShowModel] = useState(false);
-  const [qView, setQView] = useState(null);
+  const [qView, setQView] = useState([]);
+  const [searchFilter, setSearchFilter] = useState([]);
 
   const AddToCart = (id) => {
     let obj = products.find((x) => x.id == id);
@@ -39,6 +40,13 @@ const UseArrayState = () => {
     obj.quantity > 1 && obj.quantity--;
     setCart([...cart]);
   };
+  const SearchChange = (e) => {
+    let Searched = products.filter((x) =>
+      x.title.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+    setSearchFilter(Searched);
+    console.log(Searched);
+  };
 
   return [
     products,
@@ -46,11 +54,13 @@ const UseArrayState = () => {
     showModal,
     qView,
     setShowModel,
+    searchFilter,
 
     {
       AddToCart,
       RemoveFromCart,
       IncrementQuantity,
+      SearchChange,
       DecrementQuantity,
       AddToView,
     },

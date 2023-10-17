@@ -26,8 +26,10 @@ function App() {
     showModal,
     qView,
     setShowModel,
+    searchFilter,
     {
       AddToCart,
+      SearchChange,
       RemoveFromCart,
       IncrementQuantity,
       DecrementQuantity,
@@ -39,9 +41,11 @@ function App() {
     <myContext.Provider
       value={{
         products,
+        SearchChange,
         AddToCart,
         cart,
         showModal,
+        searchFilter,
         setShowModel,
         qView,
         RemoveFromCart,

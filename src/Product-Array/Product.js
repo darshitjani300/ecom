@@ -7,6 +7,7 @@ let product = [
     featured: "FEATURED",
     sale: "SALE",
     quantity: 1,
+    catergories: "GYM",
   },
   {
     id: crypto.randomUUID(),
@@ -16,6 +17,7 @@ let product = [
     featured: "FEATURED",
     sale: "SALE",
     quantity: 1,
+    catergories: "GYM",
   },
   {
     id: crypto.randomUUID(),
@@ -25,6 +27,7 @@ let product = [
     sale: "-10%",
     featured: "",
     quantity: 1,
+    catergories: "YOGA",
   },
   {
     id: crypto.randomUUID(),
@@ -34,6 +37,7 @@ let product = [
     sale: "-50%",
     featured: "",
     quantity: 1,
+    catergories: "ACCESORIES",
   },
   {
     id: crypto.randomUUID(),
@@ -43,6 +47,7 @@ let product = [
     featured: "FEATURED",
     sale: "-20%",
     quantity: 1,
+    catergories: "ACCESORIES",
   },
   {
     id: crypto.randomUUID(),
@@ -52,6 +57,7 @@ let product = [
     sale: "SALE",
     featured: "",
     quantity: 1,
+    catergories: "ACCESORIES",
   },
 ];
 

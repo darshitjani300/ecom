@@ -108,7 +108,7 @@ const Cart = () => {
             <div className="border-[1px] my-2"></div>
             <div className="flex justify-between mb-2">
               <h1 className="text-[12px]">Total</h1>
-              <h1>$124.44</h1>
+              <h1>${cart.reduce((t, x) => (t += x.price * x.quantity), 0)}</h1>
             </div>
             <div className="border-[1px] my-2"></div>
             <button className="border-[1px] bg-black text-white p-1">

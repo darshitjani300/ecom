@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./Shopping.css";
 import { myContext } from "../../../App";
 import QuickView from "../cart-comp/QuickView";
@@ -6,6 +6,20 @@ import { NavLink } from "react-router-dom";
 
 const Shopping = () => {
   let { products, AddToCart, showModal, AddToView } = useContext(myContext);
+  let [showProducts, setShowProducts] = useState(products);
+
+  const GymProducts = () => {
+    let gym = products.filter((x) => x.catergories == "GYM");
+    setShowProducts(gym);
+  };
+  const YogaProducts = () => {
+    let yoga = products.filter((x) => x.catergories == "YOGA");
+    setShowProducts(yoga);
+  };
+  const AccesoriesProducts = () => {
+    let acce = products.filter((x) => x.catergories == "ACCESORIES");
+    setShowProducts(acce);
+  };
 
   return (
     <>
@@ -16,26 +30,38 @@ const Shopping = () => {
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-start">
             <ul className="lg:w-[50%] flex gap-3 lg:gap-0 justify-between  font-medium mb-3">
-              <li className="cursor-pointer text-[11px] lg:text-[15px] text-green-800">
+              <li
+                onClick={() => setShowProducts(products)}
+                className="cursor-pointer text-[11px] lg:text-[15px] text-green-800"
+              >
                 ALL PRODUCTS{" "}
                 <span className=" font-normal text-[10px] lg:text-[14px]">
                   (20)
                 </span>
               </li>
-              <li className="cursor-pointer text-[11px] lg:text-[15px] ">
-                BOTTLES{" "}
+              <li
+                onClick={GymProducts}
+                className="cursor-pointer text-[11px] lg:text-[15px] "
+              >
+                GYM{" "}
                 <span className="font-normal text-[10px] lg:text-[14px]">
                   (10)
                 </span>
               </li>
-              <li className="cursor-pointer text-[11px] lg:text-[15px]">
-                BAGS{" "}
+              <li
+                className="cursor-pointer text-[11px] lg:text-[15px]"
+                onClick={YogaProducts}
+              >
+                YOGA{" "}
                 <span className=" font-normal text-[10px] lg:text-[14px]">
                   (2)
                 </span>
               </li>
-              <li className="cursor-pointer text-[11px] lg:text-[15px]">
-                TOOTHBRUSH{" "}
+              <li
+                className="cursor-pointer text-[11px] lg:text-[15px]"
+                onClick={AccesoriesProducts}
+              >
+                ACCESORIES{" "}
                 <span className=" font-normal text-[10px lg:text-[14px]]">
                   (8)
                 </span>
@@ -52,7 +78,7 @@ const Shopping = () => {
           </div>
         </div>
         <div className=" grid relative lg:grid-cols-3 justify-self-center my-7">
-          {products.map((x) => {
+          {showProducts.map((x) => {
             return (
               <div key={x.id} className="mainItemBox h-full">
                 <div id="onHover" className="relative">
@@ -83,7 +109,9 @@ const Shopping = () => {
                   </div>
                 </div>
                 <div className="itemInfo">
-                  <p className="titleGreen font-medium lg:text-[1.2rem]">{x.title}</p>
+                  <p className="titleGreen font-medium lg:text-[1.2rem]">
+                    {x.title}
+                  </p>
                   <div>
                     <del className="lg:text-[1rem]">${x.price} </del>
                     <span className="lg:text-[1rem] pl-2 text-green-600 font-medium">

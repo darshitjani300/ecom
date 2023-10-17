@@ -1,9 +1,25 @@
+import { useContext } from "react";
+import { myContext } from "../../../App";
+
 const Header = () => {
+  let { SearchChange, searchFilter } = useContext(myContext);
+  console.log(searchFilter);
   return (
     <div className="px-5 md:px-[100px]">
+      {/* {searchFilter.map((x)=>{
+        return (
+          <div>
+            {x.title}
+          </div>
+        )
+      })} */}
       <header className="flex py-4 justify-between items-center gap-5">
         <div>
-          <img src="./images/header_img/logo.png" alt="" className="h-[15px] xl:h-[20px]" />
+          <img
+            src="./images/header_img/logo.png"
+            alt=""
+            className="h-[15px] xl:h-[20px]"
+          />
         </div>
         <div className="flex justify-center items-center">
           <div>
@@ -25,6 +41,7 @@ const Header = () => {
           </div>
           <div className="flex justify-center  items-center w-full lg:w-[50%] xl:w-[60%]">
             <input
+              onChange={SearchChange}
               type="text"
               className="bg-gray-100 text-[12px] xl:text-[1rem] p-[4px] w-full"
               placeholder="Search for products"
@@ -40,8 +57,12 @@ const Header = () => {
               className=" h-[30px] xl:h-[35px]"
             />
             <div>
-              <h3 className=" text-green-600 text-[12px] xl:text-[14px] leading-3">Free</h3>
-              <h3 className="font-semibold text-[13px] xl:text-[14px]">Shipping</h3>
+              <h3 className=" text-green-600 text-[12px] xl:text-[14px] leading-3">
+                Free
+              </h3>
+              <h3 className="font-semibold text-[13px] xl:text-[14px]">
+                Shipping
+              </h3>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -54,7 +75,9 @@ const Header = () => {
               <h3 className="text-green-700 text-[12px] xl:text-[14px] leading-3">
                 24/7 Support
               </h3>
-              <h3 className="font-semibold text-[13px] xl:text-[14px]">+00 099 321 312</h3>
+              <h3 className="font-semibold text-[13px] xl:text-[14px]">
+                +00 099 321 312
+              </h3>
             </div>
           </div>
         </div>
