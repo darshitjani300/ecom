@@ -49,7 +49,7 @@ const Navigation = () => {
             <div className="flex relative items-center justify-center gap-1">
               {" "}
               <AiOutlineShoppingCart className="ml-1 text-[1rem] xl:text-[1.3rem] cursor-pointer relative " />
-              <p className="absolute top-[-8px] font-medium right-[-7px] z-20 text-[8px] bg-[#0D775E] rounded-2xl px-1">
+              <p className="absolute top-[-8px] font-medium right-[-7px] z-20 text-[8px] xl:[11px] bg-[#0D775E] rounded-2xl px-1">
                 {cart.length ? cart.length : ""}
               </p>
             </div>
