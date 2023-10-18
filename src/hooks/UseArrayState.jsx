@@ -8,13 +8,19 @@ const UseArrayState = () => {
   const [qView, setQView] = useState([]);
   const [searchFilter, setSearchFilter] = useState([]);
 
-  const AddToCart = (id) => {
-    let obj = products.find((x) => x.id == id);
-    let filtered = cart.find((x) => x.id == id);
-    if (filtered) {
-      alert("Product is already There");
-    } else {
-      setCart([...cart, obj]);
+  const AddToCart = (id, qview) => {
+    if (id) {
+      let obj = products.find((x) => x.id == id);
+      let filtered = cart.find((x) => x.id == id);
+      if (filtered) {
+        alert("Product is already There");
+      } else {
+        setCart([...cart, obj]);
+      }
+    }
+
+    if (qview) {
+      setCart([...cart, qview]);
     }
   };
 
@@ -29,10 +35,19 @@ const UseArrayState = () => {
     setCart(cart.filter((x) => x.id != id));
   };
 
-  const IncrementQuantity = (id) => {
+  const IncrementQuantity = (id, qview) => {
     let obj = cart.find((x) => x.id == id);
-    obj.quantity++;
-    setCart([...cart]);
+    console.log(obj);
+    if (obj) {
+      obj.quantity++;
+      setCart([...cart]);
+    }
+    if (qview) {
+      qview++;
+
+      // console.log(qview);
+      setQView({ ...qView, quantity: qview });
+    }
   };
 
   const DecrementQuantity = (id) => {

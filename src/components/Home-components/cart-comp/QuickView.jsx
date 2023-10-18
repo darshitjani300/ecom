@@ -11,12 +11,12 @@ const QuickView = () => {
     <>
       <div
         onClick={closeModel}
-        className="quick-wrapper fixed left-0 z-50 right-0 top-0 bottom-0 bg-[rgba(0,0,0,0.6)]"
+        className="quick-wrapper h-full fixed left-0 z-50 right-0 top-0 bottom-0 bg-[rgba(0,0,0,0.6)]"
       >
-        <div className="p-container fixed z-50 top-[95px] mb-3">
+        <div className="p-container fixed z-50 top-[25%] lg:left-[10%] mb-3 flex justify-center">
           <div
             onClick={(e) => e.stopPropagation()}
-            className="py-5 px-5 border-[1px] w-[80%] mx-auto border-blac bg-white grid grid-cols-2"
+            className="py-5 px-5 w-full border-[1px] md:w-[100%] lg:w-[70%] mx-auto border-black bg-white flex md:flex-row gap-5 items-center justify-center "
           >
             <div className=" justify-self-center">
               <div className="border-[1px] border-gray-300">
@@ -47,14 +47,17 @@ const QuickView = () => {
                       <h1 className="text-[12px] border px-3 align-middle py-1">
                         {qView.quantity}
                       </h1>
-                      <button className="px-2 bg-[#222328] text-white">
+                      <button
+                        onClick={() => IncrementQuantity(null, qView.quantity)}
+                        className="px-2 bg-[#222328] text-white"
+                      >
                         +
                       </button>
                     </div>
                   </div>
                 </div>
                 <div className="flex gap-5">
-                  <AddToCartBtn />
+                  <AddToCartBtn qView={qView} />
                   <AddtoFavBtn />
                 </div>
               </div>
