@@ -1,9 +1,9 @@
 import { useState } from "react";
 import product from "../Product-Array/Product";
-import product2 from "../Product-Array/Product2";
+import totalProducts from "../Product-Array/TotalProducts";
 
 const UseArrayState = () => {
-  let [aProducts] = useState(product2);
+  let [remproducts] = useState(totalProducts);
   let [products] = useState(product);
   let [cart, setCart] = useState([]);
   const [showModal, setShowModel] = useState(false);
@@ -64,8 +64,8 @@ const UseArrayState = () => {
   };
 
   return [
+    remproducts,
     products,
-    aProducts,
     cart,
     showModal,
     qView,
