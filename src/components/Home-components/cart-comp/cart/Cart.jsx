@@ -6,6 +6,7 @@ import { myContext } from "../../../../App";
 const Cart = () => {
   let { cart, RemoveFromCart, IncrementQuantity, DecrementQuantity } =
     useContext(myContext);
+  console.log(cart);
 
   return (
     <>

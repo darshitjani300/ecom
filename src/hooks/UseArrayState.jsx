@@ -21,6 +21,16 @@ const UseArrayState = () => {
       }
     }
 
+    if (id) {
+      let obj1 = remproducts.find((x) => x.id == id);
+      let filtered = cart.find((x) => x.id == id);
+      if (filtered) {
+        alert("Product is already There");
+      } else {
+        setCart([...cart, obj1]);
+      }
+    }
+
     if (qview) {
       setCart([...cart, qview]);
     }

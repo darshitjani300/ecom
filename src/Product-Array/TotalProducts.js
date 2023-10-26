@@ -9,7 +9,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/71Xu6C8X5sL.UX569.jpg",
     price: 1099,
     discount: 47,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -22,7 +22,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/512nCuSkPvL.UX679.jpg",
     price: 1199,
     discount: 68,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -35,7 +35,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/512nCuSkPvL.UX679.jpg",
     price: 1449,
     discount: 76,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -48,7 +48,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/512nCuSkPvL.UX679.jpg",
     price: 2499,
     discount: 73,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -61,7 +61,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/41TKkmIEiyL.jpg",
     price: 1499,
     discount: 67,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -74,7 +74,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/71ZjxJKa16L.UX679.jpg",
     price: 1449,
     discount: 67,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -87,7 +87,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/81+4kqbFVvL.SX679._SX._UX._SY._UY.jpg",
     price: 1299,
     discount: 69,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -100,7 +100,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/81Qp88He8ZL.UX679.jpg",
     price: 999,
     discount: 63,
-    qty: 1,
+    quantity: 1,
     category: "tshirt",
   },
   {
@@ -113,7 +113,7 @@ const totalProducts = [
     img5: "	https://m.media-amazon.com/images/I/51z-s8y0RWL.UL1500.jpg",
     price: 1599,
     discount: 59,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -126,7 +126,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/61kVGCH4bYL.UL1100.jpg",
     price: 649,
     discount: 19,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -139,7 +139,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/61lep9KLIrL.UL1100.jpg",
     price: 2299,
     discount: 45,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -152,7 +152,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/61yg+IEecXL.UL1100.jpg",
     price: 699,
     discount: 25,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -165,7 +165,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/71wg2wFEwjS.UL1500.jpg",
     price: 1299,
     discount: 70,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -178,7 +178,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/61VutC63EhL.UL1440.jpg",
     price: 1299,
     discount: 46,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -191,7 +191,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/51z-s8y0RWL.UL1500.jpg",
     price: 1599,
     discount: 59,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -204,7 +204,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/71RpRztxpZL.UL1500.jpg",
     price: 7449,
     discount: 54,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -217,7 +217,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/51cCRUVofKL.UL1056.jpg",
     price: 2499,
     discount: 50,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -230,7 +230,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/61eY3EBVYCL.UL1100.jpg",
     price: 699,
     discount: 25,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -243,7 +243,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/51rq9AiMkZL.UL1024.jpg",
     price: 7599,
     discount: 46,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
   {
@@ -256,7 +256,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/71XSP9IVf5L.UL1500.jpg",
     price: 4799,
     discount: 50,
-    qty: 1,
+    quantity: 1,
     category: "shoes",
   },
 
@@ -270,7 +270,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/71Wd3GJZzVL.UL1500.jpg",
     price: 699,
     discount: 55,
-    qty: 1,
+    quantity: 1,
     category: "tshirtwomen",
   },
   {
@@ -283,7 +283,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/61GaR57NOFL.UL1400.jpg",
     price: 899,
     discount: 17,
-    qty: 1,
+    quantity: 1,
     category: "tshirtwomen",
   },
   {
@@ -296,7 +296,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/61571C4Q3tL.SY550._SX._UX._SY._UY.jpg",
     price: 1099,
     discount: 73,
-    qty: 1,
+    quantity: 1,
     category: "tshirtwomen",
   },
   {
@@ -309,7 +309,7 @@ const totalProducts = [
     img5: "https://m.media-amazon.com/images/I/71P5TSBvg9L.UL1500.jpg",
     price: 1099,
     discount: 67,
-    qty: 1,
+    quantity: 1,
     category: "tshirtwomen",
   },
 ];
@@ -328,7 +328,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/71DxKhGrLuL._SY450_.jpg",
 //     price: 4490,
 //     discount: 78,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -342,7 +342,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/61t9SMyZ9aL._SY450_.jpg",
 //     price: 9999,
 //     discount: 75,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -356,7 +356,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/51PDeyFzo1L._SL1500_.jpg",
 //     price: 2999,
 //     discount: 7,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -370,7 +370,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/51wi0sZVqyL._SL1100_.jpg",
 //     price: 2599,
 //     discount: 71,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -384,7 +384,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/81T79XX+wUL._SL1500_.jpg",
 //     price: 2999,
 //     discount: 63,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -398,7 +398,7 @@ export default totalProducts;
 //     img5: "	https://m.media-amazon.com/images/I/81OBQ+eI1uL.SL1500.jpg",
 //     price: 4999,
 //     discount: 70,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -412,7 +412,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/71JFUxjducL.SL1500.jpg",
 //     price: 2990,
 //     discount: 57,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -426,7 +426,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/61lxhBySpLL.SY450.jpg",
 //     price: 5999,
 //     discount: 58,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -439,7 +439,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/513-c5luOmL.SL1100.jpg",
 //     price: 3299,
 //     discount: 79,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -452,7 +452,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/71o4W7JuPtL.SL1500.jpg",
 //     price: 6999,
 //     discount: 74,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -465,7 +465,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/71-cfdI-CBL.SL1500.jpg",
 //     price: 8999,
 //     discount: 83,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 //   {
@@ -478,7 +478,7 @@ export default totalProducts;
 //     img5: "https://m.media-amazon.com/images/I/517pNu7bWJL.SL1500.jpg",
 //     price: 3499,
 //     discount: 69,
-//     qty: 1,
+//     quantity: 1,
 //     category: "earbud",
 //   },
 // ],
