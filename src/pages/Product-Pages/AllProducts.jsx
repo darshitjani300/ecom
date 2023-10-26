@@ -1,18 +1,26 @@
 import React, { useContext, useState } from "react";
 import { myContext } from "../../App";
+import { motion } from "framer-motion";
 
 const AllProducts = () => {
   let { remproducts, AddToCart } = useContext(myContext);
   const [showProducts, setShowProducts] = useState(remproducts);
   console.log(remproducts);
   return (
-    <section className="lg:px-[100px] py-10">
-      <div className="grid grid-cols-4 gap-5">
+    <section className="xl:px-[100px] py-10">
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid xl:grid-cols-4 overflow-hidden lg:gap-3 gap-5">
         {showProducts.map((x) => {
           return (
-            <div key={x.id} className="mainItemBox border h-full">
-              <div id="onHover" className="relative">
-                <img src={x.img} className="md:h-full" alt="Image" />
+            <div
+              key={x.id}
+              className="mainItemBox mx-3 border overflow-hidden h-full"
+            >
+              <div className="relative">
+                <img
+                  src={x.img}
+                  className="h-[300px] object-contain"
+                  alt="Image"
+                />
                 <div className="w-full flex justify-between absolute top-0">
                   {x.sale && (
                     <h1 className="bg-[#24262B] text-white px-[7px] py-[2px] text-[10px] lg:text-[12px] font-medium">
@@ -25,23 +33,9 @@ const AllProducts = () => {
                     </h1>
                   )}
                 </div>
-                <div className="imageCart">
-                  <button
-                    onClick={() => AddToView(x.id)}
-                    className=" bg-[#24262b] text-white px-[10px] text-[12px] lg:text-[15px] py-[2px]"
-                  >
-                    Quick view
-                  </button>
-                  <button>
-                    <i className="fa-regular fa-heart bg-[#24262b] text-white text-[12px] lg:text-[15px] px-[10px] py-[6px]"></i>
-                  </button>
-                  <button onClick={() => AddToCart(x.id)}>
-                    <i className="fa-sharp fa-solid fa-cart-shopping bg-[#24262b] text-[12px] lg:text-[15px] text-white px-[10px] py-[6px]"></i>
-                  </button>
-                </div>
               </div>
-              <div className="itemInfo overflow-hidden whitespace-nowrap text-ellipsis">
-                <p className="titleGreen    font-medium lg:text-[1.2rem]">
+              <div className="itemInfo">
+                <p className=" hover:text-green-600 hover:duration-200 ease-in cursor-pointer font-medium lg:text-[1rem]">
                   {x.title}
                 </p>
                 <div>
@@ -50,6 +44,14 @@ const AllProducts = () => {
                     ${x.price}
                   </span>
                 </div>
+                <motion.div whileTap={{ scale: 0.8 }} className="w-full py-2">
+                  <button
+                    onClick={() => AddToCart(x.id)}
+                    className="bg-[#24262b] font-semibold border-[1px] border-transparent text-[12px] w-full lg:text-[15px] text-white px-[10px] py-[6px] hover:bg-white hover:text-black hover:border-black duration-300 ease-in"
+                  >
+                    ADD TO CART
+                  </button>
+                </motion.div>
               </div>
             </div>
           );
