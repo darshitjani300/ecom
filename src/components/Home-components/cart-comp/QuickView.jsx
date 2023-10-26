@@ -13,27 +13,27 @@ const QuickView = () => {
         onClick={closeModel}
         className="quick-wrapper h-full fixed left-0 z-50 right-0 top-0 bottom-0 bg-[rgba(0,0,0,0.6)]"
       >
-        <div className="p-container fixed z-50 top-[25%] lg:left-[10%] mb-3 flex justify-center">
+        <div className="fixed w-[250px] z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] mb-3 flex justify-center">
           <div
             onClick={(e) => e.stopPropagation()}
-            className="py-5 px-5 w-full border-[1px] md:w-[100%] lg:w-[70%] mx-auto border-black bg-white flex md:flex-row gap-5 items-center justify-center "
+            className="py-5 md:px-5 w-full border-[1px] mx-auto border-black bg-white flex flex-col md:flex-row gap-5 items-center justify-center "
           >
             <div className=" justify-self-center">
-              <div className="border-[1px] border-gray-300">
-                <img src={qView.img} alt="" />
+              <div className="border-[1px] mt-10 border-gray-300">
+                <img src={qView.img} className="h-[190px]" alt="" />
               </div>
             </div>
             <div className=" justify-self-start">
               <div>
                 <Sale />
-                <h1 className="my-2 font-semibold text-[1.2rem]">
+                <h1 className=" px-2 my-2 font-semibold text-[1.2rem]">
                   {qView.title}
                 </h1>
-                <p className="text-[10px] mb-2">
+                <p className="px-2 text-[10px] mb-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Possimus eos consequatur hic, expedita temporibus voluptatem.
                 </p>
-                <div className="grid grid-cols-2 mb-5">
+                <div className="grid grid-cols-2 pl-2 mb-5">
                   <div>
                     <h3 className="mb-2">Price</h3>
                     <h3>${qView.price}</h3>
@@ -56,7 +56,7 @@ const QuickView = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex gap-5">
+                <div className=" px-2 flex gap-5">
                   <AddToCartBtn qView={qView} />
                   <AddtoFavBtn />
                 </div>
