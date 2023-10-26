@@ -13,7 +13,6 @@ export const myContext = createContext();
 
 function App() {
   let [path, setPath] = useState("");
-
   let l = useLocation();
 
   useEffect(() => {
@@ -22,6 +21,7 @@ function App() {
 
   const [
     products,
+    aProducts,
     cart,
     showModal,
     qView,
@@ -41,6 +41,7 @@ function App() {
     <myContext.Provider
       value={{
         products,
+        aProducts,
         SearchChange,
         AddToCart,
         cart,

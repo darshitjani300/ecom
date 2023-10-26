@@ -1,7 +1,9 @@
 import { useState } from "react";
 import product from "../Product-Array/Product";
+import product2 from "../Product-Array/Product2";
 
 const UseArrayState = () => {
+  let [aProducts] = useState(product2);
   let [products] = useState(product);
   let [cart, setCart] = useState([]);
   const [showModal, setShowModel] = useState(false);
@@ -44,8 +46,6 @@ const UseArrayState = () => {
     }
     if (qview) {
       qview++;
-
-      // console.log(qview);
       setQView({ ...qView, quantity: qview });
     }
   };
@@ -65,6 +65,7 @@ const UseArrayState = () => {
 
   return [
     products,
+    aProducts,
     cart,
     showModal,
     qView,
