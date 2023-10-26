@@ -12,13 +12,6 @@ import Navigation from "./components/Home-components/navigation/Navigation";
 export const myContext = createContext();
 
 function App() {
-  let obj = { name: "jatin", age: 20, skill: "react" };
-  useEffect(() => {
-    let newObj = { ...obj, name: "darshit" };
-    obj = newObj;
-    console.log(obj);
-  }, []);
-  console.log(obj);
   let [path, setPath] = useState("");
 
   let l = useLocation();

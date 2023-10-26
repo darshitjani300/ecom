@@ -24,71 +24,71 @@ const Shopping = () => {
   return (
     <>
       <section className="lg:py-0 lg:px-[100px] px-5">
-        <div className="my-6 ">
-          <h1 className="text-[1.2rem] xl:text-[1.6rem] leading-8 font-semibold mb-3">
+        <div className="">
+          <h1 className="text-[1.4rem] xl:text-[1.6rem] leading-8 font-semibold mb-3">
             Most Popular Products
           </h1>
           <div className="flex flex-col lg:flex-row justify-between items-start">
-            <ul className="lg:w-[50%] flex gap-3 lg:gap-0 justify-between  font-medium mb-3">
+            <ul className="lg:w-[50%] flex gap-3 lg:gap-0 justify-between font-medium mb-3">
               <li
                 onClick={() => setShowProducts(products)}
-                className="cursor-pointer text-[11px] lg:text-[15px] text-green-800"
+                className="cursor-pointer text-[13px] lg:text-[15px] text-green-800"
               >
                 ALL PRODUCTS{" "}
-                <span className=" font-normal text-[10px] lg:text-[14px]">
+                <span className=" hidden lg:inline font-normal text-[10px] lg:text-[14px]">
                   (20)
                 </span>
               </li>
               <li
                 onClick={GymProducts}
-                className="cursor-pointer text-[11px] lg:text-[15px] "
+                className="cursor-pointer text-[13px] lg:text-[15px] "
               >
                 GYM{" "}
-                <span className="font-normal text-[10px] lg:text-[14px]">
+                <span className=" hidden lg:inline font-normal text-[10px] lg:text-[14px]">
                   (10)
                 </span>
               </li>
               <li
-                className="cursor-pointer text-[11px] lg:text-[15px]"
+                className="cursor-pointer text-[13px] lg:text-[15px]"
                 onClick={YogaProducts}
               >
                 YOGA{" "}
-                <span className=" font-normal text-[10px] lg:text-[14px]">
+                <span className=" hidden lg:inline font-normal text-[10px] lg:text-[14px]">
                   (2)
                 </span>
               </li>
               <li
-                className="cursor-pointer text-[11px] lg:text-[15px]"
+                className="cursor-pointer text-[13px] lg:text-[15px]"
                 onClick={AccesoriesProducts}
               >
                 ACCESORIES{" "}
-                <span className=" font-normal text-[10px lg:text-[14px]]">
+                <span className=" hidden lg:inline font-normal text-[10px lg:text-[14px]]">
                   (8)
                 </span>
               </li>
             </ul>
-            <div>
+            <div className="flex items-center">
               <NavLink to="/allproducts">
-                <a className="text-[12px] font-medium lg:text-[1rem]" href="#">
+                <h1 className="text-[14px] font-medium lg:text-[1rem]" href="#">
                   See all Products
-                </a>
+                </h1>
               </NavLink>
               <i className="fa-solid fa-greater-than text-[9px] lg:text-[12px] pl-2"></i>
             </div>
           </div>
         </div>
-        <div className=" grid relative lg:grid-cols-3 justify-self-center my-7">
+        <div className=" grid relative md:grid-cols-2 xl:grid-cols-3 justify-self-center my-7">
           {showProducts.map((x) => {
             return (
               <div key={x.id} className="mainItemBox h-full">
                 <div id="onHover" className="relative">
-                  <img src={x.img} className="h-full" alt="Image" />
+                  <img src={x.img} className=" h-[90%] sm:h-full" alt="Image" />
                   <div className="w-full flex justify-between absolute top-0">
                     <h1 className="bg-[#24262B] text-white px-[7px] py-[2px] text-[10px] lg:text-[12px] font-medium">
                       {x.sale}
                     </h1>
                     {x.featured && (
-                      <h1 className="bg-green-800 text-white px-[10px] py-[2px] text-[10px] lg:text-[12px] font-medium tracking-wide">
+                      <h1 className="bg-green-800 hidden sm:block text-white px-[10px] py-[2px] text-[10px] lg:text-[12px] font-medium tracking-wide">
                         {x.featured}
                       </h1>
                     )}

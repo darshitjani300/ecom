@@ -6,13 +6,6 @@ const Header = () => {
   console.log(searchFilter);
   return (
     <div className="px-5 md:px-[100px]">
-      {/* {searchFilter.map((x)=>{
-        return (
-          <div>
-            {x.title}
-          </div>
-        )
-      })} */}
       <header className="flex py-4 justify-between items-center gap-5">
         <div>
           <img
@@ -46,7 +39,7 @@ const Header = () => {
               className="bg-gray-100 text-[12px] xl:text-[1rem] p-[4px] w-full"
               placeholder="Search for products"
             />
-            <i className="fa-solid fa-magnifying-glass xl:text-[1rem] bg-gray-100 px-1 bg-none text-green-700 cursor-pointer"></i>
+            <i className="fa-solid fa-magnifying-glass xl:text-[1rem]  px-1  text-green-700 cursor-pointer"></i>
           </div>
         </div>
         <div className=" hidden gap-10 lg:flex">
