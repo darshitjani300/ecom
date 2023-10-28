@@ -6,8 +6,8 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const Navigation = () => {
   const { cart } = useContext(myContext);
   return (
-    <div className="scrollDown top-0 sticky z-30 hidden lg:block">
-      <nav className="bg-[#24262B] flex items-center justify-between text-white p-container py-3 lg:py-5">
+    <div className="scrollDown top-0 bg-[#24262B] sticky z-30 hidden lg:block">
+      <nav className=" p-container sm:w-[90%] lg:w-[80%] mx-auto flex items-center justify-between text-white p-container py-3 lg:py-5">
         <div className="flex items-center gap-2 ml-2">
           <i className="fa-solid fa-bars xl:text-[1rem]"></i>
           <h3 className="tracking-[1px] text-[12px] xl:text-[1rem]">

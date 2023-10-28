@@ -46,7 +46,7 @@ const Categories = () => {
     },
   ];
   return (
-    <section className="my-[50px] md:py-0 md:px-[100px] px-5">
+    <section className="p-container sm:w-[90%] lg:w-[80%] mx-auto sm:py-20">
       <h1 className="font-semibold lg:text-[1.2rem] xl:leading-[30px] 2xl:text-[2rem] pb-3">
         Featured Categories
       </h1>

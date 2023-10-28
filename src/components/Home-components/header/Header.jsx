@@ -3,9 +3,8 @@ import { myContext } from "../../../App";
 
 const Header = () => {
   let { SearchChange, searchFilter } = useContext(myContext);
-  console.log(searchFilter);
   return (
-    <div className="px-5 md:px-[100px]">
+    <div className="p-container sm:w-[90%] lg:w-[80%] mx-auto">
       <header className="flex py-4 justify-between items-center gap-5">
         <div>
           <img

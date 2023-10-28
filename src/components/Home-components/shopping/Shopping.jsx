@@ -23,8 +23,8 @@ const Shopping = () => {
 
   return (
     <>
-      <section className="lg:py-0 lg:px-[100px] px-5">
-        <div className="">
+      <section className="p-container sm:w-[90%] lg:w-[80%] mx-auto">
+        <div >
           <h1 className="text-[1.4rem] xl:text-[1.6rem] leading-8 font-semibold mb-3">
             Most Popular Products
           </h1>

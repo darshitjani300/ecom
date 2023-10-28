@@ -18,8 +18,9 @@ const Hero = () => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
+
   return (
-    <>
+    <div className="">
       <div className="lg:grid lg:grid-cols-2">
         <Swiper
           spaceBetween={30}
@@ -38,7 +39,7 @@ const Hero = () => {
         >
           <SwiperSlide className="bg-[#F3F3F3] flex flex-col justify-start items-center px-5 py-5">
             <div className="flex px-5 flex-col items-center">
-              <h1 className=" text-[3.5rem]  xl:text-[3rem] xl:leading-[60px] font-bold tracking-[1px] text-[#24262B]">
+              <h1 className=" text-[3.5rem] xl:text-[3rem] xl:leading-[60px] font-bold tracking-[1px] text-[#24262B]">
                 SALE 40%
               </h1>
               <h2 className="text-[#24262B] xl:text-[1.7rem] text-[1.5rem] font-[600] tracking[1px]">
@@ -110,7 +111,7 @@ const Hero = () => {
           </div>
         </Swiper>
       </div>
-    </>
+    </div>
   );
 };
 
