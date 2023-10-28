@@ -1,17 +1,15 @@
 .mainItemBox {
   display: flex;
   flex-direction: column;
-  /* justify-content: start; */
   align-items: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .itemInfo {
-  width: 300px;
+  width: 100%;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
   padding: 10px 0px;
 }
 
@@ -36,7 +34,7 @@
   align-items: center;
 }
 
-#onHover:hover .imageCart{
- bottom: 20px;
- transition: 0.4s;
+#onHover:hover .imageCart {
+  bottom: 20px;
+  transition: 0.4s;
 }
