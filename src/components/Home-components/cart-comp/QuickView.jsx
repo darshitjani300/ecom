@@ -13,14 +13,14 @@ const QuickView = () => {
         onClick={closeModel}
         className="quick-wrapper h-full fixed left-0 z-50 right-0 top-0 bottom-0 bg-[rgba(0,0,0,0.6)]"
       >
-        <div className="fixed w-[250px] z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] mb-3 flex justify-center">
+        <div className="fixed w-full md:w-[500px] lg:w-[600px] xl:w-[800px] z-50 md:top-[50%] md:left-[50%] md:translate-x-[-50%] md:translate-y-[-50%] md:mb-3 md:flex md:justify-center">
           <div
             onClick={(e) => e.stopPropagation()}
             className="py-5 md:px-5 w-full border-[1px] mx-auto border-black bg-white flex flex-col md:flex-row gap-5 items-center justify-center "
           >
             <div className=" justify-self-center">
               <div className="border-[1px] mt-10 border-gray-300">
-                <img src={qView.img} className="h-[190px]" alt="" />
+                <img src={qView.img} className="" alt="" />
               </div>
             </div>
             <div className=" justify-self-start">

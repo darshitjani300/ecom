@@ -37,18 +37,10 @@ const UseArrayState = () => {
   };
 
   const AddToView = (id) => {
-    if (id) {
-      let obj = product.find((x) => x.id == id);
-      setShowModel(true);
-      console.log(obj);
-      setQView(obj);
-    }
-    if (id) {
-      let obj2 = remproducts.find((x) => x.id == id);
-      setShowModel(true);
-      console.log(obj2);
-      setQView(obj2);
-    }
+    let obj = product.find((x) => x.id == id);
+    setShowModel(true);
+    console.log(obj);
+    setQView(obj);
   };
 
   const RemoveFromCart = (id) => {
