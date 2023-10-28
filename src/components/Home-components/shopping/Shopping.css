@@ -5,14 +5,6 @@
   margin-bottom: 20px;
 }
 
-.itemInfo {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 10px 0px;
-}
-
 .titleGreen:hover {
   color: green;
   cursor: pointer;

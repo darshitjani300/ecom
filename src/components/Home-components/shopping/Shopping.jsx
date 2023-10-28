@@ -108,7 +108,7 @@ const Shopping = () => {
                     </button>
                   </div>
                 </div>
-                <div className="itemInfo">
+                <div className="w-full flex flex-col items-center xl:my-4">
                   <p className="titleGreen font-medium lg:text-[1.2rem]">
                     {x.title}
                   </p>
