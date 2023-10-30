@@ -13,21 +13,12 @@ const UseArrayState = () => {
   const AddToCart = (id, qview) => {
     if (id) {
       let obj = products.find((x) => x.id == id);
+      let obj2 = remproducts.find((x) => x.id == id);
       let filtered = cart.find((x) => x.id == id);
       if (filtered) {
         alert("Product is already There");
       } else {
-        setCart([...cart, obj]);
-      }
-    }
-
-    if (id) {
-      let obj1 = remproducts.find((x) => x.id == id);
-      let filtered = cart.find((x) => x.id == id);
-      if (filtered) {
-        alert("Product is already There");
-      } else {
-        setCart([...cart, obj1]);
+        setCart([...cart, obj ? obj : obj2]);
       }
     }
 
