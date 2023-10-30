@@ -8,13 +8,10 @@ const AllProducts = () => {
   console.log(remproducts);
   return (
     <section className="xl:px-[100px] py-10">
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid xl:grid-cols-4 overflow-hidden lg:gap-3 gap-5">
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid xl:grid-cols-4 overflow-hidden lg:gap-5 gap-5">
         {showProducts.map((x) => {
           return (
-            <div
-              key={x.id}
-              className="mainItemBox mx-3 border overflow-hidden h-full"
-            >
+            <div key={x.id} className="px-3 py-3 border">
               <div className="relative">
                 <img
                   src={x.img}
@@ -35,7 +32,7 @@ const AllProducts = () => {
                 </div>
               </div>
               <div className="itemInfo">
-                <p className=" hover:text-green-600 hover:duration-200 ease-in cursor-pointer font-medium lg:text-[1rem]">
+                <p className=" hover:text-green-600 hover:duration-200 ease-in cursor-pointer font-medium lg:text-[1rem] whitespace-nowrap overflow-hidden text-ellipsis">
                   {x.title}
                 </p>
                 <div>

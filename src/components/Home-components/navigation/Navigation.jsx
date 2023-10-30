@@ -6,8 +6,8 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const Navigation = () => {
   const { cart } = useContext(myContext);
   return (
-    <div className="scrollDown top-0 bg-[#24262B] sticky z-30 hidden lg:block">
-      <nav className=" p-container sm:w-[90%] lg:w-[80%] mx-auto flex items-center justify-between text-white p-container py-3 lg:py-5">
+    <div className="scrollDown top-0 bg-[#24262B] sticky z-30 hidden md:block">
+      <nav className=" p-container sm:w-[90%] lg:w-[80%] mx-auto flex items-center justify-between text-white p-container py-3 md:py-5">
         <div className="flex items-center gap-2 ml-2">
           <i className="fa-solid fa-bars xl:text-[1rem]"></i>
           <h3 className="tracking-[1px] text-[12px] xl:text-[1rem]">
@@ -46,16 +46,16 @@ const Navigation = () => {
           </button>
           {/* <NavLink to="cart"> */}{" "}
           <NavLink to="/cart">
-            <div className="flex relative items-center justify-center gap-1">
+            <div className="flex relative items-center justify-center gap-2">
               {" "}
               <AiOutlineShoppingCart className="ml-1 text-[1rem] xl:text-[1.3rem] cursor-pointer relative " />
-              <p className="absolute top-[-8px] font-medium right-[-7px] z-20 text-[8px] xl:[11px] bg-[#0D775E] rounded-2xl px-1">
+              <p className="absolute top-[-8px] font-medium right-[-10px] z-20 text-[12px] bg-[#0D775E] rounded-2xl px-[5px]">
                 {cart.length ? cart.length : ""}
               </p>
             </div>
           </NavLink>
           {/* </NavLink> */}
-          <i className="fa-regular fa-heart ml-2 mr-1 text-[13px] xl:text-[1.1rem] cursor-pointer"></i>
+          <i className="fa-regular fa-heart ml-3 mr-1 text-[13px] xl:text-[1.1rem] cursor-pointer"></i>
         </div>
       </nav>
     </div>
