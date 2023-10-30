@@ -53,10 +53,10 @@ const Cart = () => {
               {cart.map((x) => {
                 return (
                   <tr
-                    key={x.id}
+                    
                     className="border-gray-300 border-b-[1px] text-center"
                   >
-                    <td className=" h-[80px] w-[80px] py-[20px] ">
+                    <td key={x.id} className=" h-[80px] w-[80px] py-[20px] ">
                       <img src={x.img} alt="" className="" />
                     </td>
                     <td className="text-[13px] lg:text-[1rem] font-medium">{x.title}</td>
@@ -92,7 +92,7 @@ const Cart = () => {
               })}
             </tbody>
           </table>
-          <div className="flex bg-[#efefef] px-6 flex-col h-[400px]">
+          <div className="flex bg-[#efefef] px-6 flex-col">
             <h1 className="text-center mb-3 font-semibold py-4">Card Total</h1>
             <button className="border-[1px] border-green-600 p-1 text-[12px] mb-3">
               Bank Offer 5% CashBack
