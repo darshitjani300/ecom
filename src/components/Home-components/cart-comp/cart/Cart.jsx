@@ -52,15 +52,16 @@ const Cart = () => {
             <tbody className="border-gray-300 border-t-[1px]">
               {cart.map((x) => {
                 return (
-                  <tr
-                    
-                    className="border-gray-300 border-b-[1px] text-center"
-                  >
+                  <tr className="border-gray-300 border-b-[1px] text-center">
                     <td key={x.id} className=" h-[80px] w-[80px] py-[20px] ">
                       <img src={x.img} alt="" className="" />
                     </td>
-                    <td className="text-[13px] lg:text-[1rem] font-medium">{x.title}</td>
-                    <td className="text-[#5E626F] text-[13px] lg:text-[1rem]">${x.price}</td>
+                    <td className="text-[13px] lg:text-[1rem] font-medium">
+                      {x.title}
+                    </td>
+                    <td className="text-[#5E626F] text-[13px] lg:text-[1rem]">
+                      ${x.price}
+                    </td>
                     <td className="">
                       <div className="flex gap-2 items-center">
                         <button
@@ -80,7 +81,9 @@ const Cart = () => {
                         </button>
                       </div>
                     </td>
-                    <td className="text-[13px] lg:text-[1rem]">${x.quantity * x.price}</td>
+                    <td className="text-[13px] lg:text-[1rem]">
+                      ${x.quantity * x.price}
+                    </td>
                     <td className="text-[13px] lg:text-[1rem]">
                       <i
                         onClick={() => RemoveFromCart(x.id)}

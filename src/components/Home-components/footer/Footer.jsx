@@ -44,6 +44,7 @@ const Footer = () => {
                   <AiOutlineArrowRight className="text-[1.5rem] text-green-600 absolute right-5 top-0 translate-y-[50%]" />
                 </button>
               </form>
+              <h1>Design by Mooncart.</h1>
             </div>
           </div>
           <div className="flex flex-col md:items-start items-center gap-2 py-5">
